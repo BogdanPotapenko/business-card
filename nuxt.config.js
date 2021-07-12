@@ -28,8 +28,47 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
-
+  modules: [
+    [
+      'nuxt-mq',
+      {
+        // Default breakpoint for SSR
+        defaultBreakpoint: 'mobile',
+        breakpoints: {
+          mobile: 450,
+          tablet: 900,
+          laptop: 1250,
+          desktop: Infinity,
+        },
+      },
+    ],
+    [
+      'nuxt-i18n',
+      {
+        locales: ['en', 'ua'],
+        defaultLocale: 'en',
+        vueI18n: {
+          fallbackLocale: 'en',
+          messages: {
+            en: {
+              home: 'Home',
+              aboutMe: 'About me',
+              skills: 'Skills',
+              portfolio: 'Portfolio',
+              contacts: 'Contacts',
+            },
+            ua: {
+              home: 'Головна',
+              aboutMe: 'Про мене',
+              skills: 'Навички',
+              portfolio: 'Портфоліо',
+              contacts: 'Контакти',
+            },
+          },
+        },
+      },
+    ],
+  ],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 }
