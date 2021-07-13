@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/sections/Navbar'
+import Navbar from '~/components/Navbar'
 
 export default {
   components: {

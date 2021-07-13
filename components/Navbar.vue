@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar">
+  <nav class="navbar">
     <div class="navbar-content">
       <div :class="$mq + ` ${active}`" class="navbar-toggle">
         <a class="navbar-toggle-btn" @click="active = !active">
@@ -7,53 +7,53 @@
         </a>
       </div>
       <div :class="$mq + ` ${active}`" class="navbar-menu">
-        <div :class="$mq" class="navbar-menu-list">
-          <div :class="$mq" class="navbar-menu-column navbar-menu-column-first">
+        <ul :class="$mq" class="navbar-menu-list">
+          <li :class="$mq" class="navbar-menu-column navbar-menu-column-first">
             <a
               :class="$mq"
               class="navbar-menu-link"
               href="#item-1"
               @click="active = !active"
-              >{{ $t('home') }}</a
+              >{{ $t('navbar.links.home') }}</a
             >
-          </div>
-          <div :class="$mq" class="navbar-menu-column">
+          </li>
+          <li :class="$mq" class="navbar-menu-column">
             <a
               :class="$mq"
               class="navbar-menu-link"
               href="#item-2"
               @click="active = !active"
-              >{{ $t('aboutMe') }}</a
+              >{{ $t('navbar.links.aboutMe') }}</a
             >
-          </div>
-          <div :class="$mq" class="navbar-menu-column">
+          </li>
+          <li :class="$mq" class="navbar-menu-column">
             <a
               :class="$mq"
               class="navbar-menu-link"
               href="#item-3"
               @click="active = !active"
-              >{{ $t('skills') }}</a
+              >{{ $t('navbar.links.skills') }}</a
             >
-          </div>
-          <div :class="$mq" class="navbar-menu-column">
+          </li>
+          <li :class="$mq" class="navbar-menu-column">
             <a
               :class="$mq"
               class="navbar-menu-link"
               href="#item-4"
               @click="active = !active"
-              >{{ $t('portfolio') }}</a
+              >{{ $t('navbar.links.portfolio') }}</a
             >
-          </div>
-          <div :class="$mq" class="navbar-menu-column navbar-menu-column-last">
+          </li>
+          <li :class="$mq" class="navbar-menu-column navbar-menu-column-last">
             <a
               :class="$mq"
               class="navbar-menu-link"
               href="#item-5"
               @click="active = !active"
-              >{{ $t('contacts') }}</a
+              >{{ $t('navbar.links.contacts') }}</a
             >
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
     <div :class="$mq + ` ${active}`" class="navbar-language">
@@ -75,7 +75,7 @@
         </nuxt-link>
       </div>
     </div>
-  </div>
+  </nav>
 </template>
 <script>
 export default {
@@ -87,7 +87,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $colors: (
   'white': #fff,
   'grey': #828282,
@@ -184,6 +184,7 @@ $colors: (
       }
     }
     &-column {
+      list-style-type: none;
       &.laptop,
       &.desktop {
         margin: 0 auto;
