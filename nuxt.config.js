@@ -28,8 +28,39 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
-
+  modules: [
+    [
+      'nuxt-mq',
+      {
+        // Default breakpoint for SSR
+        defaultBreakpoint: 'mobile',
+        breakpoints: {
+          mobile: 450,
+          tablet: 900,
+          laptop: 1250,
+          desktop: Infinity,
+        },
+      },
+    ],
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            file: 'en/index.js',
+          },
+          {
+            code: 'ua',
+            file: 'ua/index.js',
+          },
+        ],
+        lazy: true,
+        langDir: 'locales/',
+        defaultLocale: 'en',
+      },
+    ],
+  ],
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 }
