@@ -8,4 +8,8 @@ export default {
       contacts: 'Contacts',
     },
   },
+  sectionHome: {
+    name: 'Potapenko Bogdan',
+    info: 'UX | UI designer {break} 20 Years old, Kiev',
+  },
 }

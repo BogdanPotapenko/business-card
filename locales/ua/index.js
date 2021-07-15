@@ -8,4 +8,8 @@ export default {
       contacts: 'Контакти',
     },
   },
+  sectionHome: {
+    name: 'Потапенко Богдан',
+    info: 'Дизайнер інтерфейсу {break} 20 років, Київ',
+  },
 }
