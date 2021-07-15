@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav :class="$mq" class="navbar">
     <div class="navbar-content">
       <div :class="$mq + ` ${active}`" class="navbar-toggle">
         <a class="navbar-toggle-btn" @click="active = !active">
@@ -95,7 +95,12 @@ $colors: (
 );
 
 .navbar {
-  max-width: 1100px;
+  max-width: 1150px;
+  padding: 0 25px;
+  &.tablet,
+  &.mobile {
+    padding: 0;
+  }
   &-toggle {
     display: none;
     margin: 60px 20px;
