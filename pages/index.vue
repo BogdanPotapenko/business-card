@@ -1,17 +1,17 @@
 <template>
   <div>
     <navbar />
-    <sectionHome />
+    <section-home />
   </div>
 </template>
 
 <script>
 import Navbar from '~/components/Navbar'
-import sectionHome from '~/components/sections/sectionHome'
+import SectionHome from '~/components/sections/SectionHome'
 export default {
   components: {
     Navbar,
-    sectionHome,
+    SectionHome,
   },
 }
 </script>

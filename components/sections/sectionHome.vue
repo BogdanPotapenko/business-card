@@ -12,15 +12,19 @@
         </i18n>
       </div>
     </div>
-    <img :class="$mq" class="section-home-img" src="../../img/IMG.jpg" />
+    <img
+      :class="$mq"
+      class="section-home-img"
+      src="~/assets/section-home-img.jpg"
+    />
   </div>
 </template>
 
-<script>
-export default {}
-</script>
-
 <style lang="scss" scoped>
+$colors: (
+  'black900': #000,
+);
+
 .section-home {
   max-width: 1150px;
   padding: 40px 25px 50px 25px;
@@ -38,8 +42,8 @@ export default {}
     width: min-content;
     margin-left: 0;
     font-size: 47px;
-    line-height: 59px;
-    color: #070707;
+    line-height: 1.255;
+    color: map-get($colors, 'black900');
     &.mobile {
       font-size: 40px;
     }
@@ -48,8 +52,8 @@ export default {}
     width: 55%;
     margin: 0;
     font-size: 18px;
-    line-height: 22px;
-    color: #070707;
+    line-height: 1.222;
+    color: map-get($colors, 'black900');
     &.tablet,
     &.mobile {
       padding-top: 25px;
