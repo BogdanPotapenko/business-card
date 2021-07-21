@@ -88,12 +88,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$colors: (
-  'white': #fff,
-  'grey': #828282,
-  'black': #000,
-);
-
 .navbar {
   max-width: 1150px;
   padding: 0 25px;
@@ -113,14 +107,14 @@ $colors: (
     &-fig {
       width: 30px;
       height: 4px;
-      background: map-get($colors, 'black');
+      background: $black;
       &::after,
       &::before {
         content: '';
         position: absolute;
         width: 30px;
         height: 4px;
-        background: map-get($colors, 'black');
+        background: $black;
         left: 0;
       }
       &::before {
@@ -166,7 +160,7 @@ $colors: (
     &.tablet,
     &.mobile {
       height: 100%;
-      background-color: map-get($colors, 'white');
+      background-color: $white;
       overflow-y: auto;
       padding: 65px 25px;
       &.false {
@@ -174,8 +168,8 @@ $colors: (
       }
     }
     &-list {
-      border-bottom: 1px solid map-get($colors, 'grey');
-      background-color: map-get($colors, 'white');
+      border-bottom: 1px solid $grey;
+      background-color: $white;
       transform: matrix(1, 0, 0, 1, 0, 0);
       max-width: 1100px;
       display: flex;
@@ -216,7 +210,7 @@ $colors: (
       text-decoration: none;
       font-size: 18px;
       line-height: 22px;
-      color: map-get($colors, 'grey');
+      color: $grey;
       &.tablet,
       &.mobile {
         font-size: 34px;
@@ -258,7 +252,7 @@ $colors: (
       font-size: 16px;
       line-height: 20px;
       text-decoration: none;
-      color: map-get($colors, 'grey');
+      color: $grey;
       padding: 0 5px;
       &.tablet,
       &.mobile {

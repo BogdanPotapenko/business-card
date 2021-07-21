@@ -21,10 +21,6 @@
 </template>
 
 <style lang="scss" scoped>
-$colors: (
-  'black900': #000,
-);
-
 .section-home {
   max-width: 1150px;
   padding: 40px 25px 50px 25px;
@@ -43,7 +39,7 @@ $colors: (
     margin-left: 0;
     font-size: 47px;
     line-height: 1.255;
-    color: map-get($colors, 'black900');
+    color: $black900;
     &.mobile {
       font-size: 40px;
     }
@@ -53,7 +49,7 @@ $colors: (
     margin: 0;
     font-size: 18px;
     line-height: 1.222;
-    color: map-get($colors, 'black900');
+    color: $black900;
     &.tablet,
     &.mobile {
       padding-top: 25px;
