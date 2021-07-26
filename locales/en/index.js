@@ -12,4 +12,10 @@ export default {
     name: 'Potapenko Bogdan',
     info: 'UX | UI designer {break} 20 Years old, Kiev',
   },
+  sectionAboutMe: {
+    text1: `Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and
+    everything connected with it.`,
+    text2: `I'm studying at courses "Web and mobile design interfaces" in IT-Academy.`,
+    text3: 'Ready to implement excellent projects with wonderful people.',
+  },
 }
