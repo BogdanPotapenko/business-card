@@ -1,7 +1,7 @@
 <template>
   <div id="item-3" class="section-skills">
-    <h2 class="section-skills-title">Skills</h2>
-    <p class="section-skills-text">I work in such program as</p>
+    <h2 class="section-skills-title">{{ $t('sectionSkills.title') }}</h2>
+    <p class="section-skills-text">{{ $t('sectionSkills.info') }}</p>
     <ul :class="$mq" class="section-skills-list">
       <li class="section-skills-list-column">
         <img src="~/assets/Visual_Studio_Code.png" width="90px" height="90px" />
@@ -30,9 +30,6 @@
     </ul>
   </div>
 </template>
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 .section-skills {
@@ -54,6 +51,7 @@ export default {}
     display: flex;
     list-style-type: none;
     padding: 0;
+    &.tablet,
     &.mobile {
       display: block;
     }
