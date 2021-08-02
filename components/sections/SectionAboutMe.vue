@@ -1,6 +1,6 @@
 <template>
   <div id="item-2" class="section-about-me">
-    <h2 class="section-about-me-title">About me</h2>
+    <h2 class="section-about-me-title">{{ $t('sectionAboutMe.title') }}</h2>
     <p class="section-about-me-text">
       {{ $t('sectionAboutMe.text1') }}
     </p>
@@ -12,9 +12,6 @@
     </p>
   </div>
 </template>
-<script>
-export default {}
-</script>
 
 <style lang="scss" scoped>
 .section-about-me {
