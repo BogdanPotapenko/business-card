@@ -18,7 +18,7 @@
         class="section-contacts-img"
       >
         <a :href="`${social.url}`">
-          <img :src="`_nuxt/assets/${social.src}`" width="60px" height="60px" />
+          <img :src="`/images/${social.src}`" width="60px" height="60px" />
         </a>
       </li>
     </ul>
