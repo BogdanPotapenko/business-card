@@ -12,28 +12,62 @@
       {{ $t('sectionContacts.buttonText') }}
     </button>
     <ul class="section-contacts-list">
-      <li class="section-contacts-img">
-        <img src="~/assets/linkedin.png" width="60px" height="60px" />
-      </li>
-      <li class="section-contacts-img">
-        <img src="~/assets/telegram.png" width="60px" height="60px" />
-      </li>
-      <li class="section-contacts-img">
-        <img src="~/assets/Instagram.png" width="60px" height="60px" />
-      </li>
-      <li class="section-contacts-img">
-        <img src="~/assets/Gmail.png" width="60px" height="60px" />
+      <li
+        v-for="(social, index) in socials"
+        :key="index"
+        class="section-contacts-img"
+      >
+        <a :href="`${social.url}`">
+          <img :src="`_nuxt/assets/${social.src}`" width="60px" height="60px" />
+        </a>
       </li>
     </ul>
     <div class="section-contacts-bottom-text">
-      <i18n path="sectionContacts.bottomText" tag="p">
-        <template v-slot:break>
-          <br />
-        </template>
-      </i18n>
+      <p>{{ $t('sectionContacts.bottomText') }}</p>
+      <p>{{ socialsName }}</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      socials: [
+        {
+          name: 'LinkedIn',
+          url: 'https://www.linkedin.com',
+          src: 'linkedin.png',
+        },
+        {
+          name: 'Telegram',
+          url: 'https://web.telegram.org',
+          src: 'telegram.png',
+        },
+        {
+          name: 'Instagram',
+          url: 'https://www.instagram.com/',
+          src: 'Instagram.png',
+        },
+        {
+          name: 'Gmail',
+          url: 'https://mail.google.com/',
+          src: 'Gmail.png',
+        },
+      ],
+    }
+  },
+  computed: {
+    socialsName() {
+      return this.socials
+        .map(function (obj) {
+          return obj.name
+        })
+        .join(', ')
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .section-contacts {

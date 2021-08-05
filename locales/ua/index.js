@@ -26,6 +26,6 @@ export default {
     title: 'Контакти',
     text: 'Хочете дізнатися більше або просто поспілкуватися? {break} Будь ласка!',
     buttonText: 'Відправити повідомлення',
-    bottomText: 'Я в {break} LinkedIn, Telegram, Instagram, Gmail',
+    bottomText: 'Я в',
   },
 }

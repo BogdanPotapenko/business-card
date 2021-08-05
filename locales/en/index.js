@@ -27,6 +27,6 @@ export default {
     title: 'Contacts',
     text: 'Want to know more or just chat? {break} You are welcome!',
     buttonText: 'Send message',
-    bottomText: 'Like me on {break} LinkedIn, Telegram, Instagram, Gmail',
+    bottomText: 'Like me on',
   },
 }
