@@ -23,4 +23,10 @@ export default {
     title: 'Skills',
     info: 'I work in such program as',
   },
+  sectionContacts: {
+    title: 'Contacts',
+    text: 'Want to know more or just chat? {break} You are welcome!',
+    buttonText: 'Send message',
+    bottomText: 'Like me on',
+  },
 }

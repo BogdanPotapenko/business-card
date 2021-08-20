@@ -157,10 +157,10 @@ export default {
     width: 100%;
     z-index: 999;
     padding: 0 25px;
+    background-color: $white;
     &.tablet,
     &.mobile {
       height: 100%;
-      background-color: $white;
       overflow-y: auto;
       padding: 65px 25px;
       &.false {
@@ -169,7 +169,6 @@ export default {
     }
     &-list {
       border-bottom: 1px solid $grey;
-      background-color: $white;
       transform: matrix(1, 0, 0, 1, 0, 0);
       max-width: 1100px;
       display: flex;
