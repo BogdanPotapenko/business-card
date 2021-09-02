@@ -22,6 +22,9 @@ export default {
     title: 'Навички',
     info: 'Я працюю в таких програмах, як',
   },
+  sectionPortfolio: {
+    title: 'Портфоліо',
+  },
   sectionContacts: {
     title: 'Контакти',
     text: 'Хочете дізнатися більше або просто поспілкуватися? {break} Будь ласка!',
