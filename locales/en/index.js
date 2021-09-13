@@ -23,6 +23,9 @@ export default {
     title: 'Skills',
     info: 'I work in such program as',
   },
+  sectionPortfolio: {
+    title: 'Portfolio',
+  },
   sectionContacts: {
     title: 'Contacts',
     text: 'Want to know more or just chat? {break} You are welcome!',

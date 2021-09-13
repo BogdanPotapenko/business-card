@@ -12,7 +12,7 @@
             <a
               :class="$mq"
               class="navbar-menu-link"
-              href="#item-1"
+              href="#home"
               @click="active = !active"
               >{{ $t('navbar.links.home') }}</a
             >
@@ -21,7 +21,7 @@
             <a
               :class="$mq"
               class="navbar-menu-link"
-              href="#item-2"
+              href="#about-me"
               @click="active = !active"
               >{{ $t('navbar.links.aboutMe') }}</a
             >
@@ -30,7 +30,7 @@
             <a
               :class="$mq"
               class="navbar-menu-link"
-              href="#item-3"
+              href="#skills"
               @click="active = !active"
               >{{ $t('navbar.links.skills') }}</a
             >
@@ -39,7 +39,7 @@
             <a
               :class="$mq"
               class="navbar-menu-link"
-              href="#item-4"
+              href="#portfolio"
               @click="active = !active"
               >{{ $t('navbar.links.portfolio') }}</a
             >
@@ -48,7 +48,7 @@
             <a
               :class="$mq"
               class="navbar-menu-link"
-              href="#item-5"
+              href="#contacts"
               @click="active = !active"
               >{{ $t('navbar.links.contacts') }}</a
             >
@@ -65,7 +65,9 @@
         >
           UA
         </nuxt-link>
-        <h5 :class="$mq" class="navbar-language-link">|</h5>
+        <h5 :class="$mq" class="navbar-language-link">
+          <div style="color: #000">|</div>
+        </h5>
         <nuxt-link
           :class="$mq"
           class="navbar-language-link"
@@ -258,6 +260,9 @@ export default {
         font-size: 34px;
       }
     }
+  }
+  .nuxt-link-exact-active {
+    color: black;
   }
 }
 </style>

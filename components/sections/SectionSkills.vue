@@ -1,5 +1,5 @@
 <template>
-  <div id="item-3" class="section-skills">
+  <div id="skills" class="section-skills">
     <h2 class="section-skills-title">{{ $t('sectionSkills.title') }}</h2>
     <p class="section-skills-text">{{ $t('sectionSkills.info') }}</p>
     <ul :class="$mq" class="section-skills-list">

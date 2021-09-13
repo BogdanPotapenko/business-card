@@ -1,5 +1,5 @@
 <template>
-  <div id="item-2" class="section-about-me">
+  <div id="about-me" class="section-about-me">
     <h2 class="section-about-me-title">{{ $t('sectionAboutMe.title') }}</h2>
     <p class="section-about-me-text">
       {{ $t('sectionAboutMe.text1') }}

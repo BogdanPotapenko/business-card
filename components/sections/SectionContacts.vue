@@ -1,5 +1,5 @@
 <template>
-  <div id="item-5" class="section-contacts">
+  <div id="contacts" class="section-contacts">
     <h2 class="section-contacts-title">{{ $t('sectionContacts.title') }}</h2>
     <div class="section-contacts-text">
       <i18n path="sectionContacts.text" tag="p">
