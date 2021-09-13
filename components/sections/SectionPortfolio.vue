@@ -1,5 +1,5 @@
 <template>
-  <div id="item-4" class="section-portfolio">
+  <div id="portfolio" class="section-portfolio">
     <h2 class="section-portfolio-title">{{ $t('sectionPortfolio.title') }}</h2>
     <div class="section-portfolio-img">
       <a href="http://narkolog.kharkov.ua/">

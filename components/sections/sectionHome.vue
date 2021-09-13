@@ -1,5 +1,5 @@
 <template>
-  <div id="item-1" :class="$mq" class="section-home">
+  <div id="home" :class="$mq" class="section-home">
     <div :class="$mq" class="section-home-column">
       <div :class="$mq" class="section-home-name">
         <h3>{{ $t('sectionHome.name') }}</h3>
