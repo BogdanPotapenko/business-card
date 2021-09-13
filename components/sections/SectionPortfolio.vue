@@ -2,7 +2,7 @@
   <div id="portfolio" class="section-portfolio">
     <h2 class="section-portfolio-title">{{ $t('sectionPortfolio.title') }}</h2>
     <div class="section-portfolio-img">
-      <a href="http://narkolog.kharkov.ua/">
+      <a href="http://narkolog.kharkov.ua/" target="blank">
         <img src="~/assets/section-portfolio-img.png"
       /></a>
     </div>

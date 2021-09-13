@@ -1,9 +1,5 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
-  target: 'static',
-  router: {
-    base: '/<bussines-card>/',
-  },
   head: {
     title: 'portfolio',
     meta: [
@@ -71,5 +67,9 @@ export default {
 
   styleResources: {
     scss: ['./assets/scss/*.scss'],
+  },
+  target: 'static',
+  router: {
+    base: '/<business-card>/',
   },
 }

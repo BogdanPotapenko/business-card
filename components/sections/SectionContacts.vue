@@ -18,7 +18,7 @@
         class="section-contacts-img"
       >
         <a :href="`${social.url}`">
-          <img :src="`/images/${social.src}`" width="60px" height="60px" />
+          <img :src="social.src" width="60px" height="60px" />
         </a>
       </li>
     </ul>
@@ -37,22 +37,22 @@ export default {
         {
           name: 'LinkedIn',
           url: 'https://www.linkedin.com',
-          src: 'linkedin.png',
+          src: require('~/assets/linkedin.png'),
         },
         {
           name: 'Telegram',
           url: 'https://web.telegram.org',
-          src: 'telegram.png',
+          src: require('~/assets/telegram.png'),
         },
         {
           name: 'Instagram',
           url: 'https://www.instagram.com/',
-          src: 'Instagram.png',
+          src: require('~/assets/Instagram.png'),
         },
         {
           name: 'Gmail',
           url: 'https://mail.google.com/',
-          src: 'Gmail.png',
+          src: require('~/assets/Gmail.png'),
         },
       ],
     }
